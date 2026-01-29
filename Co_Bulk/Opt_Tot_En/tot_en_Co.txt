@@ -1,0 +1,2 @@
+total energy              =    -324.16065795 Ry
+

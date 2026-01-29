@@ -1,0 +1,8 @@
+&DOS
+  prefix='pwscf',
+  outdir = './tmp/',
+  fildos = 'dos.dat',
+  emin = -10.0,
+  emax = 10.0,
+/
+

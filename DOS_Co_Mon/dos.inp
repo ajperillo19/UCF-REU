@@ -1,0 +1,8 @@
+&DOS
+  prefix='scf',
+  outdir = './tmp/',
+  fildos = 'dos_72.dat',
+  emin = -10.0,
+  emax = 10.0,
+/
+

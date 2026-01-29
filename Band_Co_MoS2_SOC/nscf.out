@@ -1,0 +1,256 @@
+
+     Program PWSCF v.7.2 starts on 23Jul2025 at 12:18: 7 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    16 processors
+
+     MPI processes distributed on     1 nodes
+     14132 MiB available memory on the printing compute node when the environment starts
+ 
+     Waiting for input...
+     Reading input from standard input
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+
+     Atomic positions and unit cell read from directory:
+     ./tmp/pwscf.save/
+     Atomic positions from file used, from input discarded
+ 
+     file Mo.rel-pbe-spn-rrkjus_psl.1.0.0.UPF: wavefunction(s)  4S renormalized
+     file Co.rel-pbe-n-rrkjus_psl.1.0.0.UPF: wavefunction(s)  3D renormalized
+ 
+     R & G space division:  proc/nbgrp/npool/nimage =      16
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         108      42     12                28601     7220    1136
+     Max         110      43     13                28616     7259    1171
+     Sum        1735     685    199               457675   115763   18407
+ 
+     Using Slab Decomposition
+ 
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =       5.9812  a.u.
+     unit-cell volume          =    1463.6779 (a.u.)^3
+     number of atoms/cell      =            4
+     number of atomic types    =            3
+     number of electrons       =        35.00
+     number of Kohn-Sham states=           44
+     kinetic-energy cutoff     =      70.0000  Ry
+     charge density cutoff     =     700.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Non magnetic calculation with spin-orbit
+
+
+     celldm(1)=   5.981197  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   7.898612 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577351  0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.126605 )  
+
+
+     PseudoPot. # 1 for Mo read from file:
+     /apps/softwares/qe/PP/1.0.0_2019/rel-pbe/PSEUDOPOTENTIALS/Mo.rel-pbe-spn-rrkjus_psl.1.0.0.UPF
+     MD5 check sum: 891b0f0e8ab39d4b488c0423a9db7c1a
+     Pseudo is Ultrasoft + core correction, Zval = 14.0
+     Generated using "atomic" code by A. Dal Corso  (Quantum ESPRESSO distribution)
+     Using radial grid of 1229 points, 10 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   1
+                l(6) =   1
+                l(7) =   2
+                l(8) =   2
+                l(9) =   2
+               l(10) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 2 for S  read from file:
+     /apps/softwares/qe/PP/1.0.0_2019/rel-pbe/PSEUDOPOTENTIALS/S.rel-pbe-n-rrkjus_psl.1.0.0.UPF
+     MD5 check sum: 7b1e11608d17457d7c93146861991a3e
+     Pseudo is Ultrasoft + core correction, Zval =  6.0
+     Generated using "atomic" code by A. Dal Corso  (Quantum ESPRESSO distribution)
+     Using radial grid of 1151 points, 10 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   1
+                l(6) =   1
+                l(7) =   2
+                l(8) =   2
+                l(9) =   2
+               l(10) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 3 for Co read from file:
+     /apps/softwares/qe/PP/1.0.0_2019/rel-pbe/PSEUDOPOTENTIALS/Co.rel-pbe-n-rrkjus_psl.1.0.0.UPF
+     MD5 check sum: f8a64588c9730e533e085657a24568ba
+     Pseudo is Ultrasoft + core correction, Zval =  9.0
+     Generated using "atomic" code by A. Dal Corso  (Quantum ESPRESSO distribution)
+     Using radial grid of 1193 points, 10 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   1
+                l(6) =   1
+                l(7) =   2
+                l(8) =   2
+                l(9) =   2
+               l(10) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Mo            14.00    95.94000     Mo( 1.00)
+        S              6.00    32.06500     S ( 1.00)
+        Co             9.00    58.93320     Co( 1.00)
+
+     No symmetry found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Mo  tau(   1) = (   0.0000000   0.0000000   3.0578643  )
+         2           S   tau(   2) = (   0.5000000   0.2886750   3.6010876  )
+         3           S   tau(   3) = (   0.5000000   0.2886750   2.5702797  )
+         4           Co  tau(   4) = (   0.0000000   0.0000000   3.9034939  )
+
+     --------------------------------------------
+     DFT-D3 Dispersion Correction (3-body terms):
+     --------------------------------------------
+       Reference C6 values for interpolation: 
+
+         atom   Coordination number   C6
+         S          0.000           268.01
+         S          0.995           261.99
+         S          1.990           251.62
+         Co         0.000          1065.56
+         Co         1.715           373.09
+         Co         2.926           296.13
+         Co         7.779           236.57
+         Mo         0.000          1691.79
+         Mo         1.942          1004.01
+         Mo        11.056           674.22
+
+       Values used:
+
+         atom   Coordination number  R0_AB[au]  C6      C8
+         Mo        10.952            3.547    674.22  77634.20
+         S          6.609            3.128    251.62  12327.25
+         S          3.685            3.128    251.62  12327.25
+         Co         4.404            3.243    296.13  26037.62
+
+         Molecular C6 ( Ry / a.u.^6 ) =      5593.57
+
+
+     number of k points=   100  Gaussian smearing, width (Ry)=  0.0073
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:   457675 G-vectors     FFT dimensions: (  54,  54, 400)
+
+     Smooth grid:   115763 G-vectors     FFT dimensions: (  32,  32, 256)
+
+     Estimated max dynamical RAM per process >     429.37 MB
+
+     Estimated total dynamical RAM >       6.71 GB
+
+     The potential is recalculated from file :
+     ./tmp/pwscf.save/charge-density
+
+
+     negative rho (up, down):  1.157E-04 0.000E+00
+     Starting wfcs are   54 randomized atomic wfcs
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+
+     ethr =  2.86E-09,  avg # of iterations = 50.1
+
+     total cpu time spent up to now is      188.4 secs
+
+     End of band structure calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     Writing all to output data dir ./tmp/pwscf.save/
+ 
+     init_run     :      1.34s CPU      1.76s WALL (       1 calls)
+     electrons    :    182.27s CPU    186.11s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     potinit      :      0.05s CPU      0.06s WALL (       1 calls)
+     hinit0       :      0.60s CPU      0.63s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :    182.27s CPU    186.11s WALL (       1 calls)
+     v_of_rho     :      0.03s CPU      0.04s WALL (       1 calls)
+     newd         :      0.62s CPU      0.99s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.09s CPU      0.09s WALL (     100 calls)
+     init_us_2:cp :      0.09s CPU      0.09s WALL (     100 calls)
+     cegterg      :    169.18s CPU    172.89s WALL (     298 calls)
+
+     Called by *egterg:
+     cdiaghg      :      9.42s CPU      9.45s WALL (    5108 calls)
+     h_psi        :    117.20s CPU    120.83s WALL (    5406 calls)
+     s_psi        :      7.24s CPU      7.30s WALL (    5406 calls)
+     g_psi        :      0.60s CPU      0.61s WALL (    5008 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      7.96s CPU      8.16s WALL (    5406 calls)
+     vloc_psi     :    100.04s CPU    103.39s WALL (    5406 calls)
+     add_vuspsi   :      7.92s CPU      8.01s WALL (    5406 calls)
+
+     General routines
+     calbec       :      7.95s CPU      8.15s WALL (    5406 calls)
+     fft          :      0.04s CPU      0.07s WALL (      19 calls)
+     ffts         :      0.00s CPU      0.00s WALL (       4 calls)
+     fftw         :     43.32s CPU     44.94s WALL (  599108 calls)
+     interpolate  :      0.01s CPU      0.01s WALL (       4 calls)
+ 
+     Parallel routines
+ 
+     PWSCF        :   3m 4.81s CPU   3m10.48s WALL
+
+ 
+   This run was terminated on:  12:21:18  23Jul2025            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

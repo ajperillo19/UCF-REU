@@ -1,0 +1,4 @@
+site	energy (eV)	adsoprtion energy (eV)
+fcc	-8961.543855	0.385789
+hcp	-8962.110827	-0.181183
+ontop	-8961.287305	0.642339

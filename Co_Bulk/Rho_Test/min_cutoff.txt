@@ -1,0 +1,3 @@
+Converged cutoff Kinetic Energy: 6 Ry 
+Total Energy at cutoff: -4409.436285121475 eV 
+Total Energy difference between subsequent KE cutoffs: 0.00012190701090730727 eV 

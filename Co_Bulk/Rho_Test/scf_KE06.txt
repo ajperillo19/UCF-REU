@@ -1,0 +1,4 @@
+Kinetic-energy Cutoff (Ry): 70.0000
+Total Energy (Ry): -324.08775224
+Run Time (sec): 12.82
+Charge Density Cutoff (Ry): 420.0000

@@ -1,0 +1,3 @@
+Ideal Lattice Parameters
+Optimized a: 2.4378152811195015 Å
+Optimized c: 3.9397986218817924 Å

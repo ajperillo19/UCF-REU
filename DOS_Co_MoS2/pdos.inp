@@ -1,0 +1,5 @@
+&PROJWFC
+    prefix = 'pwscf'
+    outdir = './tmp/'
+    filpdos = 'pdos.dat'
+/

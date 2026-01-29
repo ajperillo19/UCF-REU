@@ -1,0 +1,4 @@
+Number of grid points: 8
+Number of k-ponts: 50
+Total Energy (Ry): -324.09117666
+Run Time (sec): 1.60

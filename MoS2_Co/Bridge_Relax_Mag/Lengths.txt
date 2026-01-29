@@ -1,0 +1,2 @@
+Bond Length (Å)	Height (Å)
+2.062593	0.956688

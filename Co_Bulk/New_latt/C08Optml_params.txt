@@ -1,0 +1,4 @@
+Optimal Volume (Å³): 23.53712971484165
+Total Energy (eV): -4410.075046789068
+Bulk Modulus (GPa): 283.1860805118969
+Optimal lattice constant (Å): 2.431841213390822

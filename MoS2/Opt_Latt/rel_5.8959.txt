@@ -1,0 +1,2 @@
+Lattice Parameter (Bohr): 5.8959
+Total Energy (Ry): -496.7309656203

@@ -1,0 +1,3 @@
+Converged cutoff: 65 Ry 
+Energy at cutoff: -4409.496790319077 eV 
+Energy difference: 0.0002862637838916271 eV 

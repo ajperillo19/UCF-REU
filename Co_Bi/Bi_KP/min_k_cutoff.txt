@@ -1,0 +1,3 @@
+Converged cutoff @: 10 points 
+Total Energy at cutoff: -4407.940956725013 eV 
+Total Energy difference between subsequent grid point cutoffs: 4.489878847380169e-06 eV 

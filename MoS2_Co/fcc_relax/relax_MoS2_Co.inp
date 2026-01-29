@@ -1,0 +1,74 @@
+&CONTROL
+! .control.settings
+calculation               = 'relax',
+restart_mode              = 'from_scratch',
+prefix                    = 'relax',
+pseudo_dir                = '/shared/ESPRESSO/PSLIBRARY/1.0.0/pbe/PSEUDOPOTENTIALS/',
+
+! .control.io
+outdir                    = './tmp/',
+verbosity                 = 'low',
+disk_io                   = 'default',
+wf_collect                = .false.,
+
+! .control.ion_relax
+tprnfor                   = .true.,
+tstress                   = .true.,
+forc_conv_thr             = 0.001,
+etot_conv_thr             = 0.0001,
+nstep                     = 100,
+/
+
+&SYSTEM
+! .system.structure
+ibrav                     = 0,
+nat                       = 4,
+ntyp                      = 3,
+
+! .system.ecut
+ecutwfc                   = 80.0,
+ecutrho                   = 320.0,
+
+! .system.occupations 
+occupations               = 'smearing',
+smearing                  = 'fd',
+degauss                   = 0.007,
+
+! .system.additional_keywords
+tot_charge                = 0,
+/
+
+&ELECTRONS
+! .electrons
+diagonalization           = 'david',
+conv_thr                  = 1e-06,
+electron_maxstep          = 100,
+mixing_mode               = 'plain',
+mixing_beta               = 0.7,
+/
+
+&IONS
+! .ions
+ion_dynamics              = 'bfgs',
+wfc_extrapolation         = 'none',
+pot_extrapolation         = 'atomic',
+/
+! .atomic_species
+ATOMIC_SPECIES
+   Mo  95.9400 Mo.pbe-spn-kjpaw_psl.1.0.0.UPF
+    S  32.0650 S.pbe-n-kjpaw_psl.1.0.0.UPF
+   Co  58.9332 Co.pbe-n-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS  crystal 
+ Mo     0.00000000000000     0.00000000000000     0.50000000000000   1   1   1
+  S     0.66666666666667     0.33333333333333     0.58768554150632   1   1   1
+  S     0.66666666666667     0.33333333333333     0.41231445849368   1   1   1
+ Co     0.33333333333333     0.66666666666667     0.69763606377130   1   1   1
+CELL_PARAMETERS angstrom
+    3.16850000000000     0.00000000000000     0.00000000000000
+   -1.58425000000000     2.74400149189099     0.00000000000000
+    0.00000000000000    -0.00000000000000    18.19000000000000
+
+! .kpoints
+K_POINTS automatic   ! .kpoints.type 
+  10   10    1   0   0   0 ! .kpoints.mesh and .kpoints.smesh

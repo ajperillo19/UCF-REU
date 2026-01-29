@@ -1,0 +1,89 @@
+&CONTROL
+# This &CONTROL section is for defining general setting for calculation, including type of calculation, control read/write temperary files, wave function, output...
+
+calculation               = 'scf',
+# Type of calculation is scf. It can also be nscf, relax...
+# scf - self-consistent field calculation: a method to find a solution to a system's electronic structure by iteratively refining the wave function until a consistent and stable solution is reached
+
+restart_mode              = 'from_scratch',
+#restart_ mode determined how the calculation should continue from previous calculations. From_scratch is how we typically perform Plane-wave-self-consistent-field calculations (PWscf). PWscf is a set of programs for electronic structure calculations within DFT and DFT perturbation theory.
+
+
+prefix                    = 'scf',
+#prepended to input/output file names
+
+pseudo_dir                = '/shared/ESPRESSO/PSLIBRARY/1.0.0/pbe/PSEUDOPOTENTIALS/',
+#Points to the directory containing the pseupotential files
+
+verbosity                 = 'low',
+#Determines amount of information in output file...'high' gives additionalinformation like symmetries and occupation #'s
+
+disk_io                   = 'none',
+#Specifies the amount of disk i/o activity...'none' saves nothing to disk.Default is 'low' for scf, 'medium otherwise. "Low" saves charge to disk at each SCF step, keep wavefunctions in memory (for all k-points), save them to disk only at the end
+
+wf_collect                = .false.,
+#Obsolete
+
+#
+outdir                    = './tmp/',
+/
+# End of &CONTROL section
+
+&SYSTEM
+
+a                         = 1.0,
+#lattice constant
+
+ibrav                     = 0,
+#Refers to species of lattice...ibrav=4 refers to hexagonal lattice
+
+nat                       = 2,
+#Number of atoms in the unit cell
+
+ntyp                      = 1,
+#Number of type of atoms in the unit cell
+
+ecutwfc                   = 50,
+# Cutoff energy for planewave expansion (in Ry)
+
+ecutrho                   = 200,
+#Kinetic energy cutoff (Rydberg units) for charge density and potential
+
+degauss                   = 0.007,
+#Value of the gaussian spreading (Ry_ for the Brillouin-zone integration in metals
+smearing                  = 'fd',
+#Fermi-Dirac smearing
+
+occupations               = 'smearing',
+#Smearing is a technique used to smooth out abrupt changes in the electronin the electronic band structure to improve numerical convergence
+/
+
+&ELECTRONS
+diagonalization           = 'david',
+#Numerical method for diagonalization...'david' refers to Davidson iterative diagonalization with overlap matrix -- fast
+
+mixing_mode               = 'plain',
+#'Plain' charge density Broyden mixing. Mixing refers to a quantum state existing as a statistical mixture of pure states
+
+electron_maxstep          = 100,
+#Maximum number of iterations in a scf step
+
+mixing_beta               = 0.7,
+#Mixing factor for self-consistency
+conv_thr                  = 1e-06,
+#Convergence threshold.
+/
+
+ATOMIC_SPECIES
+   Ge  72.6300 Ge.pbe-n-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS  crystal 
+ Ge     0.00000000000000     0.00000000000000     0.00000000000000   1   1   1
+ Ge     0.25000000000000     0.25000000000000     0.25000000000000   1   1   1
+CELL_PARAMETERS
+    0.00000000000000     2.82500000000000     2.82500000000000
+    2.82500000000000     0.00000000000000     2.82500000000000
+    2.82500000000000     2.82500000000000     0.00000000000000
+
+K_POINTS automatic
+  15   15   15   0   0   0

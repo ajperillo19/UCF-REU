@@ -1,0 +1,212 @@
+
+     Program PWSCF v.7.2 starts on 23Jul2025 at 12:57:15 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     4 processors
+
+     MPI processes distributed on     1 nodes
+     11062 MiB available memory on the printing compute node when the environment starts
+ 
+     Waiting for input...
+     Reading input from standard input
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+
+     Atomic positions and unit cell read from directory:
+     ./tmp/scf.save/
+     Atomic positions from file used, from input discarded
+ 
+     file Co.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  4S 3D renormalized
+     Message from routine setup:
+     using ibrav=0 with symmetry is DISCOURAGED, use correct ibrav instead
+ 
+     R & G space division:  proc/nbgrp/npool/nimage =       4
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         256     105     30                40740    10349    1800
+     Max         257     106     31                40759    10358    1831
+     Sum        1027     421    121               163013    41407    7237
+ 
+     Using Slab Decomposition
+ 
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =       4.6068  a.u.
+     unit-cell volume          =     520.9788 (a.u.)^3
+     number of atoms/cell      =            1
+     number of atomic types    =            1
+     number of electrons       =         9.00
+     number of Kohn-Sham states=            9
+     kinetic-energy cutoff     =      70.0000  Ry
+     charge density cutoff     =     700.0000  Ry
+     Exchange-correlation= SLA  PW   PBX  PBC
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   4.606803  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   6.153050 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000 -0.577350  0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.162521 )  
+
+
+     PseudoPot. # 1 for Co read from file:
+     /shared/ESPRESSO/PSLIBRARY/1.0.0/pbe/PSEUDOPOTENTIALS/Co.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: 17e7ab8db721b244d1352252ea6cb8e7
+     Pseudo is Projector augmented-wave + core cor, Zval =  9.0
+     Generated using "atomic" code by A. Dal Corso  (Quantum ESPRESSO distribution)
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1193 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Co             9.00    58.93320     Co( 1.00)
+
+     Starting magnetic structure 
+     atomic species   magnetization
+        Co           0.800
+
+     24 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Co  tau(   1) = (   0.0000000   0.0000000   3.0765251  )
+
+     --------------------------------------------
+     DFT-D3 Dispersion Correction (3-body terms):
+     --------------------------------------------
+       Reference C6 values for interpolation: 
+
+         atom   Coordination number   C6
+         Co         0.000          1065.56
+         Co         1.715           373.09
+         Co         2.926           296.13
+         Co         7.779           236.57
+
+       Values used:
+
+         atom   Coordination number  R0_AB[au]  C6      C8
+         Co         4.930            3.243    296.13  26037.62
+
+         Molecular C6 ( Ry / a.u.^6 ) =       296.13
+
+
+     number of k points=   217 (tetrahedron method)
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:   163013 G-vectors     FFT dimensions: (  40,  40, 240)
+
+     Smooth grid:    41407 G-vectors     FFT dimensions: (  25,  25, 160)
+
+     Estimated max dynamical RAM per process >     136.32 MB
+
+     Estimated total dynamical RAM >     545.26 MB
+     Generating pointlists ...
+     new r_m :   0.4125 (alat units)  1.9003 (a.u.) for type    1
+
+     The potential is recalculated from file :
+     ./tmp/scf.save/charge-density
+
+
+     negative rho (up, down):  2.806E-06 5.931E-07
+     Starting wfcs are    9 randomized atomic wfcs
+     Checking if some PAW data can be deallocated... 
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+
+     ethr =  1.11E-08,  avg # of iterations = 41.9
+
+     total cpu time spent up to now is       38.3 secs
+
+     End of band structure calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     the Fermi energy is    -2.2554 ev
+     (compare with:    -2.2554 eV, computed in scf)
+
+     Writing all to output data dir ./tmp/scf.save/
+ 
+     init_run     :      0.43s CPU      0.56s WALL (       1 calls)
+     electrons    :     36.28s CPU     37.53s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     potinit      :      0.15s CPU      0.18s WALL (       1 calls)
+     hinit0       :      0.15s CPU      0.20s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :     36.13s CPU     37.38s WALL (       1 calls)
+     v_of_rho     :      0.05s CPU      0.07s WALL (       1 calls)
+     newd         :      0.06s CPU      0.11s WALL (       1 calls)
+     PAW_pot      :      0.09s CPU      0.10s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.07s CPU      0.07s WALL (     434 calls)
+     init_us_2:cp :      0.07s CPU      0.07s WALL (     434 calls)
+     cegterg      :     33.75s CPU     34.92s WALL (    1100 calls)
+
+     Called by *egterg:
+     cdiaghg      :      1.44s CPU      1.48s WALL (   18626 calls)
+     h_psi        :     29.04s CPU     30.09s WALL (   19726 calls)
+     s_psi        :      0.44s CPU      0.45s WALL (   19726 calls)
+     g_psi        :      0.24s CPU      0.25s WALL (   18192 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      0.83s CPU      0.85s WALL (   19726 calls)
+     vloc_psi     :     27.60s CPU     28.60s WALL (   19726 calls)
+     add_vuspsi   :      0.47s CPU      0.48s WALL (   19726 calls)
+
+     General routines
+     calbec       :      0.80s CPU      0.83s WALL (   19726 calls)
+     fft          :      0.02s CPU      0.08s WALL (      23 calls)
+     ffts         :      0.00s CPU      0.00s WALL (       2 calls)
+     fftw         :     21.31s CPU     22.11s WALL (  190646 calls)
+     interpolate  :      0.00s CPU      0.00s WALL (       2 calls)
+     davcio       :      0.04s CPU      0.05s WALL (     868 calls)
+ 
+     Parallel routines
+ 
+     PWSCF        :     37.09s CPU     38.72s WALL
+
+ 
+   This run was terminated on:  12:57:54  23Jul2025            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

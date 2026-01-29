@@ -1,0 +1,210 @@
+
+     Program PWSCF v.7.2 starts on  3Jul2025 at 14:34:51 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    16 processors
+
+     MPI processes distributed on     1 nodes
+     16282 MiB available memory on the printing compute node when the environment starts
+ 
+     Waiting for input...
+     Reading input from standard input
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+
+     Atomic positions and unit cell read from directory:
+     ./tmp/pwscf.save/
+     Atomic positions from file used, from input discarded
+ 
+     file Mo.rel-pbe-spn-kjpaw_psl.1.0.0.UPF: wavefunction(s)  4S 4P 4D renormalized
+     file S.rel-pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  3S 3P 3P renormalized
+     Message from routine setup:
+     using ibrav=0 with symmetry is DISCOURAGED, use correct ibrav instead
+ 
+     R & G space division:  proc/nbgrp/npool/nimage =      16
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min          49      49     14                 6439     6439    1007
+     Max          50      50     16                 6452     6452    1014
+     Sum         793     793    235               103119   103119   16155
+ 
+     Using Slab Decomposition
+ 
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =       5.9876  a.u.
+     unit-cell volume          =    1067.2529 (a.u.)^3
+     number of atoms/cell      =            3
+     number of atomic types    =            2
+     number of electrons       =        26.00
+     number of Kohn-Sham states=           34
+     kinetic-energy cutoff     =      80.0000  Ry
+     charge density cutoff     =     320.0000  Ry
+     Exchange-correlation= SLA  PW   PBX  PBC
+                           (   1   4   3   4   0   0   0)
+     Non magnetic calculation with spin-orbit
+
+
+     celldm(1)=   5.987597  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   5.740887 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350  0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.174189 )  
+
+
+     PseudoPot. # 1 for Mo read from file:
+     /home/antonio/PROJ_MetalTMD/antonio/PSEUDO/Mo.rel-pbe-spn-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: 6cda9dff73cdab358834687290e4775f
+     Pseudo is Projector augmented-wave + core cor, Zval = 14.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1229 points, 10 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   1
+                l(6) =   1
+                l(7) =   2
+                l(8) =   2
+                l(9) =   2
+               l(10) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 2 for S  read from file:
+     /home/antonio/PROJ_MetalTMD/antonio/PSEUDO/S.rel-pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: 665a6610193808042cdd4f03574b9f7b
+     Pseudo is Projector augmented-wave + core cor, Zval =  6.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1151 points, 10 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   1
+                l(6) =   1
+                l(7) =   2
+                l(8) =   2
+                l(9) =   2
+               l(10) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Mo            14.00    95.94000     Mo( 1.00)
+        S              6.00    32.06500     S ( 1.00)
+
+     12 Sym. Ops. (no inversion) found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Mo  tau(   1) = (   0.0000000   0.0000000   2.8704434  )
+         2           S   tau(   2) = (   0.5000000   0.2886751   3.3738362  )
+         3           S   tau(   3) = (   0.5000000   0.2886751   2.3670507  )
+
+     number of k points=   100  Fermi-Dirac smearing, width (Ry)=  0.0070
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:   103119 G-vectors     FFT dimensions: (  36,  36, 200)
+
+     Estimated max dynamical RAM per process >      74.49 MB
+
+     Estimated total dynamical RAM >       1.16 GB
+
+     The potential is recalculated from file :
+     ./tmp/pwscf.save/charge-density
+
+
+     negative rho (up, down):  7.280E-04 0.000E+00
+     Starting wfcs are   36 randomized atomic wfcs
+     Checking if some PAW data can be deallocated... 
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+
+     ethr =  3.85E-09,  avg # of iterations = 18.9
+
+     total cpu time spent up to now is       43.2 secs
+
+     End of band structure calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     Writing all to output data dir ./tmp/pwscf.save/
+ 
+     init_run     :      0.43s CPU      0.51s WALL (       1 calls)
+     electrons    :     40.94s CPU     42.15s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.00s CPU      0.00s WALL (       1 calls)
+     potinit      :      0.10s CPU      0.10s WALL (       1 calls)
+     hinit0       :      0.16s CPU      0.21s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :     40.94s CPU     42.15s WALL (       1 calls)
+     v_of_rho     :      0.01s CPU      0.01s WALL (       1 calls)
+     newd         :      0.13s CPU      0.16s WALL (       1 calls)
+     PAW_pot      :      0.09s CPU      0.09s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.04s CPU      0.06s WALL (     100 calls)
+     init_us_2:cp :      0.04s CPU      0.06s WALL (     100 calls)
+     cegterg      :     33.61s CPU     34.64s WALL (     127 calls)
+
+     Called by *egterg:
+     cdiaghg      :      2.36s CPU      2.39s WALL (    1992 calls)
+     h_psi        :     22.15s CPU     23.11s WALL (    2119 calls)
+     s_psi        :      1.89s CPU      1.92s WALL (    2119 calls)
+     g_psi        :      0.17s CPU      0.17s WALL (    1892 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      1.83s CPU      1.91s WALL (    2119 calls)
+     vloc_psi     :     17.95s CPU     18.79s WALL (    2119 calls)
+     add_vuspsi   :      2.04s CPU      2.09s WALL (    2119 calls)
+
+     General routines
+     calbec       :      1.83s CPU      1.90s WALL (    2119 calls)
+     fft          :      0.01s CPU      0.05s WALL (      15 calls)
+     fftw         :     14.54s CPU     15.23s WALL (  208684 calls)
+     davcio       :      0.12s CPU      0.17s WALL (     200 calls)
+ 
+     Parallel routines
+ 
+     PWSCF        :     42.63s CPU     49.18s WALL
+
+ 
+   This run was terminated on:  14:35:40   3Jul2025            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

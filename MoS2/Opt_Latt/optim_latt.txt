@@ -1,0 +1,2 @@
+
+Optimal lattice parameter for MoS2 is: {3.16511328460818} Å 

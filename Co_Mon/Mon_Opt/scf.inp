@@ -1,0 +1,66 @@
+&CONTROL
+! .control.settings
+calculation               = 'scf',
+restart_mode              = 'from_scratch',
+prefix                    = 'scf',
+pseudo_dir                = '/shared/ESPRESSO/PSLIBRARY/1.0.0/pbe/PSEUDOPOTENTIALS/',
+
+! .control.io
+outdir                    = './tmp/',
+verbosity                 = 'low',
+disk_io                   = 'default',
+wf_collect                = .false.,
+
+! .control.ion_relax
+tprnfor                   = .true.,
+tstress                   = .true.,
+forc_conv_thr             = 0.001,
+etot_conv_thr             = 0.0001,
+nstep                     = 100,
+/
+
+&SYSTEM
+! .system.structure
+ibrav                     = 0,
+nat                       = 1,
+ntyp                      = 1,
+
+! .system.ecut
+ecutwfc                   = 70,
+ecutrho                   = 700,
+
+! .system.occupations 
+occupations               = 'smearing',
+smearing                  = 'gauss',
+degauss                   = 0.0073498586,
+vdw_corr                  = 'DFT-D3',
+starting_magnetization    = 0.8,
+nspin                     = 2,
+
+! .system.additional_keywords
+tot_charge                = 0,
+/
+
+&ELECTRONS
+! .electrons
+diagonalization           = 'david',
+conv_thr                  = 1e-06,
+electron_maxstep          = 100,
+mixing_mode               = 'plain',
+mixing_beta               = 0.7,
+/
+
+! .atomic_species
+ATOMIC_SPECIES
+   Co  58.9332 Co.pbe-n-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS  crystal 
+ Co     0.00000000000000     0.00000000000000     0.50000000000000   1   1   1
+CELL_PARAMETERS angstrom
+    3.16511328460818     0.00000000000000     0.00000000000000
+   -1.58255664230409     2.74106851032629     0.00000000000000
+    0.00000000000000    -0.00000000000000    19.00000000000000
+
+! .kpoints
+K_POINTS automatic   ! .kpoints.type 
+  12   12    1   0   0   0 ! .kpoints.mesh and .kpoints.smesh

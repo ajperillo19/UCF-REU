@@ -1,0 +1,26 @@
+Removing compiler version 2022.2.1
+Use `module list` to view any remaining dependent modules.
+  Load "debugger" to debug DPC++ applications with the gdb-oneapi debugger.
+  Load "dpl" for additional DPC++ APIs: https://github.com/oneapi-src/oneDPL
+Removing oclfpga version 2022.2.1
+Use `module list` to view any remaining dependent modules.
+Removing mpi version 2021.7.1
+Use `module list` to view any remaining dependent modules.
+Removing mkl version 2022.2.1
+Use `module list` to view any remaining dependent modules.
+Removing compiler-rt version 2022.2.1
+Use `module list` to view any remaining dependent modules.
+Removing tbb version 2021.7.1
+Use `module list` to view any remaining dependent modules.
+Loading mkl version 2022.2.1
+Loading tbb version 2021.7.1
+Loading compiler-rt version 2022.2.1
+Loading mpi version 2021.7.1
+Loading compiler version 2022.2.1
+Loading oclfpga version 2022.2.1
+  Load "debugger" to debug DPC++ applications with the gdb-oneapi debugger.
+  Load "dpl" for additional DPC++ APIs: https://github.com/oneapi-src/oneDPL
+
+Loading qe/7.2
+  Loading requirement: tbb/2021.7.1 compiler-rt/2022.2.1 mkl/2022.2.1
+    mpi/2021.7.1 oclfpga/2022.2.1 compiler/2022.2.1

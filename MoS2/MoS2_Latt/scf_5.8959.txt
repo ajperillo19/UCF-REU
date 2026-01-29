@@ -1,0 +1,3 @@
+Lattice Parameter (Bohr): 5.8959
+Total Energy (Ry): -496.69400057
+Run Time (sec): 4.92

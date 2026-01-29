@@ -1,0 +1,6 @@
+&BANDS
+   prefix = 'scf'
+   outdir = './tmp/'
+   filband = 'bands.dat'
+
+/

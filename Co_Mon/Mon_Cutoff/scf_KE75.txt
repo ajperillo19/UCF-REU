@@ -1,0 +1,3 @@
+Kinetic-energy Cutoff (Ry): 75.0000
+Total Energy (Ry): -161.91833148
+Run Time (sec): 1.93
